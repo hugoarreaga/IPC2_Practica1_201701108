@@ -1,0 +1,38 @@
+digraph A{
+	subgraph cluster_O{
+		label ="Agenda de&#92;nContactos";
+		style = filled;
+		bgcolor="grey52";
+
+		/* Entidades */
+		node [shape=box,color= cornflowerblue,style=filled,fillcolor=darkseagreen1];
+
+		1 [ label="NOMBRE: cusuario1&#92;nAPELLIDO: aapellido1&#92;nTELEFONO: 1"];
+
+		2 [ label="NOMBRE: busuario2&#92;nAPELLIDO: aapellido2&#92;nTELEFONO: 2"];
+
+		3 [ label="NOMBRE: ausuario3&#92;nAPELLIDO: aapellido3&#92;nTELEFONO: 3"];
+
+		4 [ label="NOMBRE: usuario4&#92;nAPELLIDO: dpellido4&#92;nTELEFONO: 4"];
+
+		5 [ label="NOMBRE: usuario5&#92;nAPELLIDO: eapellido5&#92;nTELEFONO: 5"];
+
+		6 [ label="NOMBRE: usuario6&#92;nAPELLIDO: fapellido6&#92;nTELEFONO: 6"];
+
+		7 [ label="NOMBRE: usuario7&#92;nAPELLIDO: gapellido7&#92;nTELEFONO: 7"];
+
+		/* Relationships */
+		1 -> 2;
+		2 -> 1;
+		2 -> 3;
+		3 -> 2;
+		3 -> 4;
+		4 -> 3;
+		4 -> 5;
+		5 -> 4;
+		5 -> 6;
+		6 -> 5;
+		6 -> 7;
+		7 -> 6;
+	}
+}
